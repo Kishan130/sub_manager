@@ -1,0 +1,17 @@
+const List<Map<String, dynamic>> defaultPlatforms = [
+  {"name": "Netflix", "category": "Entertainment", "baseCost": 649.0, "color": 0xFFE50914, "packageName": "com.netflix.mediaclient", "logoUrl": "https://www.google.com/s2/favicons?domain=netflix.com&sz=128"},
+  {"name": "Amazon Prime", "category": "Entertainment", "baseCost": 1499.0, "color": 0xFF00A8E1, "packageName": "com.amazon.avod.thirdpartyclient", "logoUrl": "https://www.google.com/s2/favicons?domain=amazon.com&sz=128"},
+  {"name": "Spotify", "category": "Music", "baseCost": 119.0, "color": 0xFF1DB954, "packageName": "com.spotify.music", "logoUrl": "https://www.google.com/s2/favicons?domain=spotify.com&sz=128"},
+  {"name": "Disney+ Hotstar", "category": "Entertainment", "baseCost": 899.0, "color": 0xFF181A46, "packageName": "in.startv.hotstar", "logoUrl": "https://www.google.com/s2/favicons?domain=hotstar.com&sz=128"},
+  {"name": "YouTube Premium", "category": "Entertainment", "baseCost": 129.0, "color": 0xFFFF0000, "packageName": "com.google.android.youtube", "logoUrl": "https://www.google.com/s2/favicons?domain=youtube.com&sz=128"},
+  {"name": "Apple Music", "category": "Music", "baseCost": 99.0, "color": 0xFFFA243C, "packageName": "com.apple.android.music", "logoUrl": "https://www.google.com/s2/favicons?domain=apple.com&sz=128"},
+  {"name": "ChatGPT Plus", "category": "Utility", "baseCost": 1650.0, "color": 0xFF10A37F, "packageName": "com.openai.chatgpt", "logoUrl": "https://www.google.com/s2/favicons?domain=openai.com&sz=128"},
+  {"name": "GitHub Copilot", "category": "Utility", "baseCost": 850.0, "color": 0xFF24292F, "packageName": "", "logoUrl": "https://www.google.com/s2/favicons?domain=github.com&sz=128"},
+  {"name": "Adobe Creative Cloud", "category": "Productivity", "baseCost": 4230.0, "color": 0xFFFF0000, "packageName": "", "logoUrl": "https://www.google.com/s2/favicons?domain=adobe.com&sz=128"},
+  {"name": "Figma", "category": "Productivity", "baseCost": 1200.0, "color": 0xFFF24E1E, "packageName": "com.figma.roster", "logoUrl": "https://www.google.com/s2/favicons?domain=figma.com&sz=128"},
+  {"name": "Gym Membership", "category": "Health", "baseCost": 2000.0, "color": 0xFF4CAF50, "packageName": "", "logoUrl": ""},
+  {"name": "Internet (WiFi)", "category": "Utility", "baseCost": 999.0, "color": 0xFF2196F3, "packageName": "", "logoUrl": ""},
+  {"name": "Electricity Board", "category": "Bills", "baseCost": 1500.0, "color": 0xFFFFC107, "packageName": "", "logoUrl": ""},
+  {"name": "Notion", "category": "Productivity", "baseCost": 400.0, "color": 0xFF000000, "packageName": "notion.id", "logoUrl": "https://www.google.com/s2/favicons?domain=notion.so&sz=128"},
+  {"name": "Google One", "category": "Utility", "baseCost": 130.0, "color": 0xFF4285F4, "packageName": "com.google.android.apps.subscriptions.red", "logoUrl": "https://www.google.com/s2/favicons?domain=google.com&sz=128"},
+];
