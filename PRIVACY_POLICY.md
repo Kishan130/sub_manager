@@ -81,7 +81,7 @@ We may update this Privacy Policy from time to time. Changes will be posted in t
 ## 8. Contact Us
 If you have any questions or concerns regarding this Privacy Policy, please contact us at:
 
-📧 **Email:** kishanvachhani130@gmail.com
+📧 **Email:** kishanpatel041199@gmail.com
 🌐 **GitHub:** [github.com/Kishan130/sub_manager](https://github.com/Kishan130/sub_manager)
 
 ---
