@@ -34,4 +34,18 @@ class FirestoreService {
       'usageHistory': updatedHistory.map((d) => Timestamp.fromDate(d)).toList(),
     });
   }
+
+  /// Deletes all subscriptions belonging to a user (used during account deletion).
+  Future<void> deleteAllUserSubscriptions(String userId) async {
+    final snapshot = await _db
+        .collection('subscriptions')
+        .where('userId', isEqualTo: userId)
+        .get();
+    
+    final batch = _db.batch();
+    for (final doc in snapshot.docs) {
+      batch.delete(doc.reference);
+    }
+    await batch.commit();
+  }
 }

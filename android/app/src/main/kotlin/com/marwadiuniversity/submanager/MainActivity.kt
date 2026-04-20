@@ -1,4 +1,4 @@
-package com.example.sub_manager
+package com.marwadiuniversity.submanager
 
 import android.app.AppOpsManager
 import android.app.usage.UsageStats

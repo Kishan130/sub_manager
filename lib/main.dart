@@ -4,7 +4,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'core/theme.dart';
 import 'core/providers/theme_provider.dart';
-import 'features/auth/presentation/screens/auth_wrapper.dart';
+import 'features/splash/splash_screen.dart';
+import 'core/providers/notification_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,20 +29,37 @@ void main() async {
   );
 }
 
-class SubManagerApp extends ConsumerWidget {
+class SubManagerApp extends ConsumerStatefulWidget {
   const SubManagerApp({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<SubManagerApp> createState() => _SubManagerAppState();
+}
+
+class _SubManagerAppState extends ConsumerState<SubManagerApp> {
+  @override
+  void initState() {
+    super.initState();
+    // Request notification permissions on app launch
+    Future.microtask(() {
+      ref.read(notificationServiceProvider).requestPermissions();
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    // Watch this to keep the background notification scheduler alive and synced
+    ref.watch(notificationSchedulerProvider);
+
     final themeMode = ref.watch(themeProvider);
 
     return MaterialApp(
-      title: 'Subscription Manager',
+      title: 'SubManager',
       debugShowCheckedModeBanner: false,
       themeMode: themeMode,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      home: const AuthWrapper(),
+      home: const SplashScreen(),
     );
   }
 }

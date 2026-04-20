@@ -58,3 +58,6 @@ app.*.map.json
 .directory
 Desktop.ini
 Thumbs.db
+
+# Temporary build/generation scripts
+*.ps1
